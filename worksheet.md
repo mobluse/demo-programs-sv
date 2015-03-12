@@ -1,16 +1,16 @@
-# Demo Programs
+# Demoprogram
 
-Raspbian comes with a range of demo programs which you can just compile and run. They range from simple *hello world* text output, to full 1080p HD video playback, 3D spinning teapots and real-time animating fractal patterns. These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla *hallå världen* med textutmatning, till full uppspelning av 1080p HD-video, 3D spinnande tekannor och realtidsanimerade fraktala mönster. Dessa är ett bra sätt att få en känsla för vad Pi kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
 
-## Oh no! A command line interface!
+## Å nej! Ett kommandoradsgränssnitt!
 
-Boot up your Raspberry Pi and you will find yourself at the prompt below. If you have configured your Pi to automatically go into the desktop interface, use the `start` button to log out of the desktop.
+Starta upp din Raspberry Pi och du kommer att finna dig vid prompten nedan. Om du har konfigurerat din Pi att automatiskt gå in i skrivbordsgränssnittet, använd `start` knappen för att logga ut från skrivbordet.
 
 `pi@raspberrypi ~ $ _`
 
-The text above is the command prompt. Try not to be afraid of it!  A CLI (command line interface) is actually a very quick and efficient way to use a computer.
+Texten ovan är kommandoprompten. Försök att inte vara rädd för den! Ett CLI (command line interface) är faktiskt ett mycket snabbt och effektivt sätt att använda en dator.
 
-To start, navigate to the `hello_pi` folder where all the demos are stored. Enter the command below to do this. **TIP**: You can use the `TAB` key for auto-complete as you enter commands.
+För att starta, gå till `hello_pi`-mappen där alla demos lagras. Ange kommandot nedan för att göra detta. **TIP**: Du kan använda `TAB`-tangenten för automatisk komplettering när du skriver in kommandon.
 
 `cd /opt/vc/src/hello_pi`
 
@@ -22,11 +22,19 @@ If you enter `ls` and press `enter`, you’ll see a list of folders. There is on
 
 There is a small shell script supplied in the `hello_pi` folder called `rebuild.sh`, which will do the compile for you. Enter the following command to run it. Ignore the gobbledygook for now!
 
+Kommandoprompten bör nu se ut så här. Den blå delen visar var du är i filsystemet på Pi:n.
+
+`pi@raspberrypi /opt/vc/src/hello_pi $ _`
+
+Om du skriver `ls` och trycker `enter` ser du en lista med mappar. Det finns en för varje demo. Innan du kan köra dem, måste de dock kompileras. Oroa dig inte om du inte förstår varför du behöver göra detta; bara gå med på det för tillfället, och vi kommer att lära mer om det senare.
+
+Det finns ett litet skalskript som levereras i `hello_pi`-mappen som heter `rebuild.sh`, vilket kommer att göra kompileringen åt dig. Ange följande kommando för att köra den. Ignorera rappakaljan för tillfället!
+
 `./rebuild.sh`
 
-A lot of text will scroll up the screen now, but for this exercise you can ignore it. It is just the output of the compiler as it works through the demo code. Wait for the command prompt to return before you continue.
+En massa text kommer rulla upp skärmen nu, men för denna övning kan du ignorera det. Det är bara utmatningen från kompilatorn när den jobbar sig igenom demokoden. Vänta till kommandoprompten återvänder innan du fortsätter.
 
-Now we’re ready to run some demos.
+Nu är vi redo att köra några demos.
 
 ## Hello world
 
