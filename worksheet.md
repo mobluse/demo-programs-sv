@@ -1,6 +1,6 @@
 # Demoprogram
 
-Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla *hallå världen* med textutmatning, till full uppspelning av 1080p HD-video, 3D spinnande tekannor och realtidsanimerade fraktala mönster. Dessa är ett bra sätt att få en känsla för vad Pi kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla *hallå världen* med textutmatning, till uppspelning av full-HD/1080p-video, 3D spinnande tekannor och realtidsanimerade fraktala mönster. Dessa är bra sätt att få en känsla för vad Pi kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
 
 ## Å nej! Ett kommandoradsgränssnitt!
 
@@ -8,19 +8,11 @@ Starta upp din Raspberry Pi och du kommer att finna dig vid prompten nedan. Om d
 
 `pi@raspberrypi ~ $ _`
 
-Texten ovan är kommandoprompten. Försök att inte vara rädd för den! Ett CLI (command line interface) är faktiskt ett mycket snabbt och effektivt sätt att använda en dator.
+Texten ovan är kommandoprompten. Försök att inte vara rädd för den! Ett CLI (Command Line Interface) är faktiskt ett mycket snabbt och effektivt sätt att använda en dator på.
 
-För att starta, gå till `hello_pi`-mappen där alla demos lagras. Ange kommandot nedan för att göra detta. **TIP**: Du kan använda `TAB`-tangenten för automatisk komplettering när du skriver in kommandon.
+För att starta, gå till `hello_pi`-mappen där alla demona lagras. Ange kommandot nedan för att göra detta. **TIPS**: Du kan använda `TAB`-tangenten för automatisk komplettering när du skriver in kommandon.
 
 `cd /opt/vc/src/hello_pi`
-
-The command prompt should now look like this. The blue part shows where you are in the file system of the Pi.
-
-`pi@raspberrypi /opt/vc/src/hello_pi $ _`
-
-If you enter `ls` and press `enter`, you’ll see a list of folders. There is one for each demo. Before you can run them though, they must be compiled. Don’t worry if you don’t understand why you need to do this; just go along with it for now, and we'll learn more about it later on.
-
-There is a small shell script supplied in the `hello_pi` folder called `rebuild.sh`, which will do the compile for you. Enter the following command to run it. Ignore the gobbledygook for now!
 
 Kommandoprompten bör nu se ut så här. Den blå delen visar var du är i filsystemet på Pi:n.
 
@@ -28,38 +20,38 @@ Kommandoprompten bör nu se ut så här. Den blå delen visar var du är i filsy
 
 Om du skriver `ls` och trycker `enter` ser du en lista med mappar. Det finns en för varje demo. Innan du kan köra dem, måste de dock kompileras. Oroa dig inte om du inte förstår varför du behöver göra detta; bara gå med på det för tillfället, och vi kommer att lära mer om det senare.
 
-Det finns ett litet skalskript som levereras i `hello_pi`-mappen som heter `rebuild.sh`, vilket kommer att göra kompileringen åt dig. Ange följande kommando för att köra den. Ignorera rappakaljan för tillfället!
+Det finns ett litet skalskript som levereras i `hello_pi`-mappen som heter `rebuild.sh`, vilket kommer att göra kompileringen åt dig. Ange följande kommando för att köra det. Ignorera rappakaljan för tillfället!
 
 `./rebuild.sh`
 
-En massa text kommer rulla upp skärmen nu, men för denna övning kan du ignorera det. Det är bara utmatningen från kompilatorn när den jobbar sig igenom demokoden. Vänta till kommandoprompten återvänder innan du fortsätter.
+En massa text kommer rulla upp på skärmen nu, men för denna övning kan du ignorera den. Det är bara utmatningen från kompilatorn när den jobbar sig igenom demokoden. Vänta till kommandoprompten återvänder innan du fortsätter.
 
-Nu är vi redo att köra några demos.
+Nu är vi redo att köra några demon.
 
-## Hello world
+## Hallå världen
 
-First, let's do a quick test that will ensure the previous compilation step worked correctly. This rather boring program will only display the text `Hello world!`, but if it works correctly then we know all the other demos should work too.
+Först, låt oss göra ett snabbt test som kommer att säkerställa att det tidigare kompileringssteget fungerat korrekt. Detta ganska tråkiga program kommer bara att visa texten `Hello world!`, men om det fungerar korrekt så vet vi att alla andra demon också bör fungera.
 
-Enter the following commands to go inside the `hello_world` folder and list the files.
+Ange följande kommandon för att gå in i `hello_world`-mappen och lista filerna.
 
 ```
 cd hello_world
 ls
 ```
 
-You’ll notice the `.bin` file is shown in green. This is because it is an executable file. This means this is the file we run to launch the program.
+Du kommer att märka att `.bin`-filen visas i grönt. Detta beror på att det är en körbar fil. Det innebär att detta är den fil som vi kör för att starta programmet.
 
-Use the following command to run the demo. You need the `./` to specify the current directory, otherwise the Linux system folders will be searched for the filename you type.
+Använd följande kommando för att köra demot. Du behöver `./` för att ange den aktuella katalogen, annars kommer Linux' mappar för körbara filer att sökas igenom efter det filnamn du skriver, men inte den nuvarande katalogen (av säkerhetsskäl).
 
 `./hello_world.bin`
 
-## Hello video
+## Hallå video
 
-This will play a 15 second long, full HD 1080p video clip with no sound. The intention here is to demonstrate video decode and playback capability. You’ll see that it's very smooth!
+Detta kommer att spela ett 15 sekunder långt, full-HD/1080p-videoklipp utan ljud. Avsikten här är att visa videoavkodning och -uppspelning. Du kommer se att det går väldigt flytande (d.v.s. utan att lagga)!
 
 ![image](./images/bbb.jpg "Big Buck Bunny")
 
-Enter the following commands to navigate to the `hello_video` folder and list the files.
+Ange följande kommandon för att navigera till `hello_video`-mappen och lista filerna.
 
 ```
 cd ..
@@ -67,17 +59,17 @@ cd hello_video
 ls
 ```
 
-You’ll notice the `.bin` file again. This demo needs to be told what video clip to play when we run it though, so this must be the `test.h264` file (h264 is a type of video codec).
+Du kommer att märka `.bin`-filen igen. Detta demo måste dock veta vilket videoklipp som skall spelas när vi kör det, så det måste vara `test.h264`-filen (h264 är en typ av video-codec).
 
-You'll need the `./` to specify the current directory again.
+Du behöver `./` för att ange den nuvarande katalogen igen.
 
 `./hello_video.bin test.h264`
 
-## Hello triangle
+## Hallå triangel
 
-This displays a spinning cube with different images on each side. This is intended to demonstrate Open GL ES rendering (an open-source programming library for doing 3D graphics).
+Detta visar en snurrande kub med olika bilder på varje sida. Syftet är att visa Open GL ES-rendering (ett öppen-källkod programmeringsbibliotek för att göra 3D-grafik).
 
-Enter the following commands to navigate to the `hello_triangle` folder and list its contents.
+Ange följande kommandon för att navigera till `hello_triangle`-mappen och lista dess innehåll.
 
 ```
 cd ..
@@ -85,15 +77,15 @@ cd hello_triangle
 ls
 ```
 
-You’ll again see that one of the files is green. This is the executable file. This demo doesn’t need any video input files like the previous one, so you can just go ahead and run the `.bin` file.
+Du kommer återigen att se att en av filerna är grön. Detta är den körbara filen. Detta demo behöver inte några videoindatafiler som det tidigare, så du kan bara gå vidare och köra `.bin`-filen.
 
 `./hello_triangle.bin`
 
-The demo will run forever until you decide to quit. To exit the demo press `Ctrl – C`.
+Demot kommer att köras för evigt tills du bestämmer dig för att sluta. För att lämna demot, tryck `Ctrl+C`.
 
-## Hello triangle 2
+## Hallå triangel 2
 
-This one displays two superimposed fractals, one on top of the other. You can move the mouse to change the shape of the fractal in real time. This is also intended to demonstrate Open GL ES rendering. Some of you may recognise the Mandelbrot fractal.
+Detta visar två överlagrade fraktaler, en ovanpå den andra. Du kan flytta musen för att ändra formen på fraktalen i realtid. Detta är också avsett att demonstrera Open GL ES-rendering. Några av er kanske känner igen Mandelbrot-fraktalen.
 
 ![image](./images/mandelbrot.jpg "Mandelbrot")
 
@@ -103,15 +95,15 @@ cd hello_triangle2
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+Ser du den gröna `.bin`-filen? Okej, kör den!
 
 `./hello_triangle2.bin`
 
-Now move the mouse around, and you’ll see the fractal changing. See if you can get it to form a perfect circle. It’s a little tricky, but it can be done. To exit the demo press `Ctrl – C`.
+Kör nu omkring med musen, och du ser hur fraktalen förändras. Se om du kan få den att bilda en perfekt cirkel. Det är lite knepigt, men det kan göras. För att lämna demot, tryck `Ctrl+C`.
 
-## Hello teapot
+## Hallå tekanna
 
-This displays a spinning teapot with the video clip from `hello_video` texture-mapped onto its surface. Impressive! You may recognise the teapot model if you’re familiar with a piece of software called Blender. This demonstrates Open GL ES rendering and video decode/playback at the same time.
+Detta visar en snurrande tekanna med videoklipp från `hello_video` textur-avbildad på dess yta. Imponerande! Du kanske känner igen tekannemodellen om du är bekant med en programvara som heter Blender. Detta visar Open GL ES-rendering och videoavkodning och -uppspelning samtidigt.
 
 ![image](./images/teapot.jpg "Tea Pot")
 
@@ -121,11 +113,11 @@ cd hello_teapot
 ls
 ```
 
-Notice the green `.bin` file? Okay, run it!
+Lägger du märke till den gröna `.bin`-filen? Okej, kör den!
 
 `./hello_teapot.bin`
 
-You may receive the following error when you try to run this demo:
+Du får kanske följande felmeddelande när du försöker köra detta demo:
 
 ```
 Note: ensure you have sufficient gpu_mem configured
@@ -133,35 +125,35 @@ eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x3
 eglCreateImageKHR failed.
 ```
 
-Don’t worry though: if you see this error, you just need to alter one configuration setting to make it work.
+Men oroa dig inte: Om du ser detta fel, behöver du bara ändra en konfigurationsinställning för att få det att fungera.
 
-The error means the GPU (graphics processing unit) does not have enough memory to run the demo. It’s the GPU that does all the heavy lifting when drawing 3D graphics to the screen (a bit like the graphics card in a gaming PC). The Raspberry Pi shares its memory/RAM between the CPU and GPU, and by default is configured to only give 64 MB of RAM to the GPU. If we increase this to 128, that should fix the problem.
+Felet innebär GPU:n (Graphics Processing Unit) inte har tillräckligt med minne för att köra demot. Det är GPU:n som gör allt tyngdlyftande vid ritande av 3D-grafik till skärmen (lite som grafikkortet i en spel-PC). Raspberry Pi:n delar sitt minne/RAM mellan CPU:n (Central Processing Unit) och GPU:n, och som standard är den konfigurerad att bara ge 64 MB RAM till GPU:n. Om vi ​​ökar detta till 128, bör det lösa problemet.
 
-To do that, you'll need to enter the following command:
+För att göra det, måste du ange följande kommando:
 
 `sudo raspi-config`
 
-This will open up a menu on a blue background. Perform the following actions:
+Detta kommer att öppna upp en meny på en blå bakgrund. Utför följande åtgärder:
 
-- Go to Advanced Options.
-- Go to Memory Split.
-- Delete `64` and enter `128` instead. Press `enter`.
-- Go down to Finish.
-- Click Yes to reboot.
+- Gå till Advanced Options.
+- Gå till Memory Split.
+- Ta bort `64` och ange `128` i stället. Tryck `Enter`.
+- Gå ner till Finish.
+- Klicka på Yes för att starta om.
 
-After you have logged back in, enter the following command to get back to the `hello_teapot` demo:
+Efter att du har loggat in igen, skriv följande kommando för att komma tillbaka till `hello_teapot`-demot:
 
 `cd /opt/vc/src/hello_pi/hello_teapot`
 
-Now try and run it again, and you should find it will work.
+Försök nu och köra det igen, och du kommer upptäcka att det fungerar.
 
 `./hello_teapot.bin`
 
-The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
+Demot kommer att köras för evigt tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
 
-## Hello audio
+## Hallå audio
 
-This demo just demonstrates audio output. It plays a sine wave, which makes a kind of WOO WOO WOO sound.
+Detta demo visar bara ljuduppspelning. Det spelar en sinusvåg, vilken gör ett slags WOO WOO WOO-ljud.
 
 ```
 cd ..
@@ -169,17 +161,17 @@ cd hello_audio
 ls
 ```
 
-Notice the green `.bin` file? Run it. Getting the hang of this now?
+Ser du den gröna `.bin`-filen? Kör den. Börjar du få kläm på detta nu?
 
 `./hello_audio.bin`
 
-This will play the sound over the headphone jack on the Pi. If you’re using a HDMI monitor, you can make it output over HDMI by adding a `1` to the command.
+Detta kommer att spela upp ljudet via hörlursuttaget på Pi:n. Om du använder en HDMI-monitor, kan du få den att spela upp via HDMI genom att lägga till en `1`:a till kommandot.
 
 `./hello_audio.bin 1`
 
-The demo will run forever until you quit. To exit the demo press `Ctrl – C`.
+Demot kommer att köras för evigt tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
 
-## What next?
+## Vad göra härnäst?
 
-- By now you should be getting the hang of navigating up into the parent `hello_pi` folder (using `cd ..`) and then down into one of the demo folders (using `cd hello_something`).  
-- Try some of the other demos on your own. The `hello_videocube` one is a good place to start.
+- Vid det här laget bör du börja få kläm på att navigera upp till moder `hello_pi`-mappen (med `cd ..`) och sedan ner i en av demomapparna (med `cd hello_something`).
+- Prova några av de andra demona på egen hand. `hello_videocube` är ett bra ställe att börja.
