@@ -1,4 +1,4 @@
-- How to use the command line interface
-- How to navigate the file system
-- How to compile code
-- How to run code
+- Hur man använder kommandoradsgränssnittet
+- Hur man navigerar i filsystemet
+- Hur man kompilerar kod
+- Hur man kör kod
