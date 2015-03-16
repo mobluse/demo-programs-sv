@@ -1,14 +1,14 @@
-# Raspberry Pi demo programs
+# Raspberry Pi demoprogram
 
-How to run the hello_pi demo programs on Raspbian
+Hur att köra hello_pi demoprogram på Raspbian
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
-## So you’ve got a Raspberry Pi. Now what?
+## Så du har fått en Raspberry Pi. Vad göra nu?
 
-How about running some demo programs that showcase what the Pi is capable of?  Awesome graphics, anyone?
-Raspbian comes with a range of demo programs which you can just compile and run.  They range from simple "hello world" text output, to full 1080p HD video playback, 3D spinning teapots, and real-time animating fractal patterns.
-These are a great way to get a feel for what the Pi can do, and to gain some familiarity with navigating around the system and running programs at the command line.
+Vad sägs om att köra några demoprogram som visar upp vad Pi:n klarar av? Fantastisk grafik, någon?
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla "hallå världen" textutmatning, till full 1080p HD-video uppspelning, 3D snurrande tekannor, och realtidsanimera fraktala mönster.
+Dessa är bra sätt att få en känsla för vad Pi:n kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
 
 ## Requirements
 
@@ -23,32 +23,44 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 - HDMI cable
 - A monitor or TV
 
-### Time
+## Krav
 
-- 10 minutes
+Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian, behöver du också:
 
-## Steps
+### Hårdvara
 
-1. Setting Up your Pi
-1. Oh no! A command line interface!
-1. Hello world
-1. Hello video
-1. Hello triangle
-1. Hello triangle 2
-1. Hello teapot
-1. Hello audio
-1. Other demos
+- Raspberry Pi
+- Micro USB-nätadapter
+- Ett SD-kort med Raspbian redan installerat med hjälp av NOOBS
+- USB-tangentbord
+- HDMI-kabel
+- En bildskärm eller TV
 
-## Worksheet
+### Tid
 
-- [The worksheet](worksheet.md)
+- 10 minuter
 
-## Licence
+## Steg
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+1. Installera din Pi
+1. Åh nej! Ett kommandoradsgränssnitt!
+1. Hallå världen
+1. Hallå video
+1. Hallå triangel
+1. Hallå triangel 2
+1. Hallå tekanna
+1. Hallå ljud
+1. Andra demonstrationer
+
+## Arbetsblad
+- [Arbetsbladet](worksheet.md)
+
+## Licens
+
+Om inget annat anges, är omfattas allt i detta förvar av följande licens:
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
 ***Demo Programs*** by the [Raspberry Pi Foundation](http://raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/demo-programs
+Baserat på ett arbete på https://github.com/raspberrypilearning/demo-programs
