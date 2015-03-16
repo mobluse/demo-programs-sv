@@ -2,7 +2,7 @@
 
 Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla *hallå världen* med textutmatning, till uppspelning av full-HD/1080p-video, 3D spinnande tekannor och realtidsanimerade fraktala mönster. Dessa är bra sätt att få en känsla för vad Pi kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
 
-## Å nej! Ett kommandoradsgränssnitt!
+## Åh nej! Ett kommandoradsgränssnitt!
 
 Starta upp din Raspberry Pi och du kommer att finna dig vid prompten nedan. Om du har konfigurerat din Pi att automatiskt gå in i skrivbordsgränssnittet, använd `start` knappen för att logga ut från skrivbordet.
 
