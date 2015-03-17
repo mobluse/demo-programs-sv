@@ -62,7 +62,7 @@ ls
 
 Du kommer att märka `.bin`-filen igen. Detta demo måste dock få veta vilket videoklipp som ska spelas när vi kör det, så det måste vara `test.h264`-filen (h264 är en typ av video-codec).
 
-Texten `./` behövs för att använda den nuvarande mappen, annars letar Linux i systemmapperna efter filnamnet du skrivit.
+Texten `./` behövs för att använda den nuvarande mappen, annars letar Linux i systemmapparna efter filnamnet du skrivit.
 
 `./hello_video.bin test.h264`
 
@@ -174,5 +174,5 @@ Demot kommer att köras för evigt eller tills du avslutar. För att lämna demo
 
 ## Vad vill du göra nu?
 
-- Vid det här laget bör du börja få kläm på att navigera upp till förälder-mappen `hello_pi` (med `cd ..`) och sedan ner i en av demomapperna (med `cd hello_something`).
+- Vid det här laget bör du börja få kläm på att navigera upp till förälder-mappen `hello_pi` (med `cd ..`) och sedan ner i en av demomapparna (med `cd hello_something`).
 - Prova några av de andra demona på egen hand. `hello_videocube` är ett bra ställe att börja.
