@@ -1,18 +1,18 @@
 # Raspberry Pi demoprogram
 
-Hur man kör hello_pi demoprogram i Raspbian.
+Hur man kör demoprogrammet hello_pi på Raspbian.
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
-## Så du har fått en Raspberry Pi. Vad göra nu?
+## Så du har fått en Raspberry Pi. Hur kommer du igång?
 
-Vad sägs om att köra några demoprogram som visar upp vad Pi:n klarar av? Fantastisk grafik, någon?
-Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla "hallå världen" textutmatning, till full 1080p HD-video uppspelning, 3D snurrande tekannor, och realtidsanimerade fraktala mönster.
-Dessa är bra sätt att få en känsla för vad Pi:n kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
+Vad sägs om att köra några demoprogram som visar upp vad Pi:n klarar av? Någon som vill ha fantastisk grafik?
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
+Dessa är bra för att få en känsla för vad Pi:n kan göra, och för att få lite erfarenhet av att navigera runt i systemet och köra program i kommandoraden.
 
 ## Krav
 
-Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian, behöver du också:
+Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian behöver du även:
 
 ### Hårdvara
 
@@ -45,7 +45,7 @@ Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian, behöver du också:
 
 ## Licens
 
-Om inget annat anges, är omfattas allt i detta förvar av följande licens:
+Om inget annat anges, omfattas allt i detta repositorie av följande licens:
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
