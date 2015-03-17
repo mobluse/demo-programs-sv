@@ -1,6 +1,6 @@
 # Raspberry Pi demoprogram
 
-Hur man kör demoprogrammet hello_pi på Raspbian.
+Hur man kör demoprogrammen i hello_pi på Raspbian.
 
 ![image](./images/cover.jpg "Raspberry Pi")
 
