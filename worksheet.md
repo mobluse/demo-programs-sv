@@ -42,7 +42,7 @@ ls
 
 Du kommer att märka att `.bin`-filen visas i grönt. Detta beror på att det är en körbar fil. Det innebär att detta är den fil som vi kör för att starta programmet.
 
-Använd följande kommando för att köra demot. Du behöver `./` för att ange den aktuella mappen, annars kommer Linux' mappar för körbara filer att sökas igenom efter det filnamn du skriver, men inte den nuvarande mappen (av säkerhetsskäl).
+Använd följande kommando för att köra demot. Du behöver `./` för att ange den aktuella katalogen, annars kommer Linux' mappar för körbara filer att sökas igenom efter det filnamn du skriver, men inte den nuvarande katalogen (av säkerhetsskäl).
 
 `./hello_world.bin`
 
@@ -62,7 +62,7 @@ ls
 
 Du kommer att märka `.bin`-filen igen. Detta demo måste dock få veta vilket videoklipp som ska spelas när vi kör det, så det måste vara `test.h264`-filen (h264 är en typ av video-codec).
 
-Texten `./` behövs för att använda den nuvarande mappen, annars letar Linux i systemmapparna efter filnamnet du skrivit.
+Texten `./` behövs för att använda den nuvarande katalogen, annars letar Linux i systemmapparna efter filnamnet du skrivit.
 
 `./hello_video.bin test.h264`
 
