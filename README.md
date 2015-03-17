@@ -35,7 +35,7 @@ Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian behöver du även:
 1. Hallå världen
 1. Hallå video
 1. Hallå triangel
-1. Hallå triangel 2
+1. Hallå fraktal
 1. Hallå tekanna
 1. Hallå audio
 1. Andra demonstrationer
