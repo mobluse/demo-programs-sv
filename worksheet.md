@@ -84,7 +84,7 @@ Du kan återigen se att en av filerna är grön. Detta är den körbara filen. D
 
 Demot kommer att köras för evigt eller tills du bestämmer dig för att sluta. För att lämna demot, tryck `Ctrl+C`.
 
-## Hallå triangel 2
+## Hallå fraktal
 
 Detta visar två överlagrade fraktaler, en ovanpå den andra. Du kan flytta musen för att ändra formen på fraktalen i realtid. Detta är också avsett att demonstrera Open GL ES-rendering. Några av er kanske känner igen Mandelbrot-fraktalen.
 
