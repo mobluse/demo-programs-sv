@@ -1,6 +1,6 @@
 # Demoprogram
 
-Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p/Full-HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
 Dessa är bra för att få en känsla för vad Pi:n kan göra, och för att få lite erfarenhet av att navigera runt i systemet och köra program från kommandoraden.
 
 ## Åh nej! Ett kommandoradsgränssnitt!
@@ -48,7 +48,7 @@ Använd följande kommando för att köra demot. Du behöver `./` för att ange 
 
 ## Hallå video
 
-Detta kommer att spela ett 15 sekunder långt, full-HD/1080p-videoklipp utan ljud. Avsikten här är att visa videoavkodning och -uppspelning. Du kommer se att det går väldigt flytande (d.v.s. utan att lagga)!
+Detta kommer att spela ett 15 sekunder långt, Full-HD/1080p-videoklipp utan ljud. Avsikten här är att visa videoavkodning och -uppspelning. Du kommer se att det går väldigt flytande (d.v.s. utan att lagga)!
 
 ![image](./images/bbb.jpg "Big Buck Bunny")
 
