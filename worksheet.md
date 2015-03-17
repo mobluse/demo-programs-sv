@@ -1,10 +1,11 @@
 # Demoprogram
 
-Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkla *hallå världen* med textutmatning, till uppspelning av full-HD/1080p-video, 3D roterande tekannor och realtidsanimerade fraktala mönster. Dessa är bra sätt att få en känsla för vad Pi kan göra, och för att få viss erfarenhet av att navigera runt i systemet och köra program på kommandoraden.
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
+Dessa är bra för att få en känsla för vad Pi:n kan göra, och för att få lite erfarenhet av att navigera runt i systemet och köra program i kommandoraden.
 
 ## Åh nej! Ett kommandoradsgränssnitt!
 
-Starta upp din Raspberry Pi och du kommer att finna dig vid prompten nedan. Om du har konfigurerat din Pi att automatiskt gå in i skrivbordsgränssnittet, använd `start` knappen för att logga ut från skrivbordet.
+Starta upp din Raspberry Pi och du kommer att finna dig vid prompten nedan. Om du har konfigurerat din Pi att automatiskt gå in i skrivbordsgränssnittet, använd `start`-knappen för att logga ut från skrivbordet.
 
 `pi@raspberrypi ~ $ _`
 
@@ -18,7 +19,7 @@ Kommandoprompten bör nu se ut så här. Den blå delen visar var du är i filsy
 
 `pi@raspberrypi /opt/vc/src/hello_pi $ _`
 
-Om du skriver `ls` och trycker `enter` ser du en lista med mappar. Det finns en för varje demo. Innan du kan köra dem, måste de dock kompileras. Oroa dig inte om du inte förstår varför du behöver göra detta; bara gå med på det för tillfället, och vi kommer att lära mer om det senare.
+Om du skriver `ls` och trycker `enter` ser du en lista med mappar. Det finns en för varje demo. Innan du kan köra dem måste de dock kompileras. Oroa dig inte om du inte förstår varför du behöver göra detta, bara gå med på det för tillfället, så kommer vi att lära oss mer om det senare.
 
 Det finns ett litet skalskript som levereras i `hello_pi`-mappen som heter `rebuild.sh`, vilket kommer att göra kompileringen åt dig. Ange följande kommando för att köra det. Ignorera rappakaljan för tillfället!
 
@@ -59,15 +60,15 @@ cd hello_video
 ls
 ```
 
-Du kommer att märka `.bin`-filen igen. Detta demo måste dock veta vilket videoklipp som skall spelas när vi kör det, så det måste vara `test.h264`-filen (h264 är en typ av video-codec).
+Du kommer att märka `.bin`-filen igen. Detta demo måste dock få veta vilket videoklipp som ska spelas när vi kör det, så det måste vara `test.h264`-filen (h264 är en typ av video-codec).
 
-Du behöver `./` för att ange den nuvarande katalogen igen.
+Texten `./` behövs för att använda den nuvarande katalogen, annars letar Linux i systemmapparna efter filnamnet du skrivit.
 
 `./hello_video.bin test.h264`
 
 ## Hallå triangel
 
-Detta visar en snurrande kub med olika bilder på varje sida. Syftet är att visa Open GL ES-rendering (ett öppen-källkod programmeringsbibliotek för att göra 3D-grafik).
+Detta visar en snurrande kub med olika bilder på varje sida. Syftet är att visa Open GL ES-rendering (ett programmeringsbibliotek med öppen-källkod för att göra 3D-grafik).
 
 Ange följande kommandon för att navigera till `hello_triangle`-mappen och lista dess innehåll.
 
@@ -77,11 +78,11 @@ cd hello_triangle
 ls
 ```
 
-Du kommer återigen att se att en av filerna är grön. Detta är den körbara filen. Detta demo behöver inte några videoindatafiler som det tidigare, så du kan bara gå vidare och köra `.bin`-filen.
+Du kan återigen se att en av filerna är grön. Detta är den körbara filen. Detta demo behöver inte några videoindatafiler som det tidigare, så du kan bara gå vidare och köra `.bin`-filen.
 
 `./hello_triangle.bin`
 
-Demot kommer att köras för evigt tills du bestämmer dig för att sluta. För att lämna demot, tryck `Ctrl+C`.
+Demot kommer att köras för evigt eller tills du bestämmer dig för att sluta. För att lämna demot, tryck `Ctrl+C`.
 
 ## Hallå triangel 2
 
@@ -99,11 +100,11 @@ Ser du den gröna `.bin`-filen? Okej, kör den!
 
 `./hello_triangle2.bin`
 
-Kör nu omkring med musen, och du ser hur fraktalen förändras. Se om du kan få den att bilda en perfekt cirkel. Det är lite knepigt, men det kan göras. För att lämna demot, tryck `Ctrl+C`.
+Kör nu omkring med musen, och du ser hur fraktalen förändras. Se om du kan få den att bilda en perfekt cirkel. Det är lite knepigt, men det är möjligt. För att lämna demot, tryck `Ctrl+C`.
 
 ## Hallå tekanna
 
-Detta visar en snurrande tekanna med videoklipp från `hello_video` textur-avbildad på dess yta. Imponerande! Du kanske känner igen tekannemodellen om du är bekant med en programvara som heter Blender. Detta visar Open GL ES-rendering och videoavkodning och -uppspelning samtidigt.
+Detta visar en snurrande tekanna med videoklipp från `hello_video` textur-mappat på dess yta. Imponerande! Du kanske känner igen tekannemodellen om du är bekant med en programvara som heter Blender. Detta visar Open GL ES-rendering och videoavkodning och -uppspelning samtidigt.
 
 ![image](./images/teapot.jpg "Tea Pot")
 
@@ -113,7 +114,7 @@ cd hello_teapot
 ls
 ```
 
-Lägger du märke till den gröna `.bin`-filen? Okej, kör den!
+Ser du den gröna `.bin`-filen? Okej, kör den!
 
 `./hello_teapot.bin`
 
@@ -125,9 +126,9 @@ eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x3
 eglCreateImageKHR failed.
 ```
 
-Men oroa dig inte: Om du ser detta fel, behöver du bara ändra en konfigurationsinställning för att få det att fungera.
+Men oroa dig inte: Om du ser detta fel behöver du bara ändra en konfigurationsinställning för att få det att fungera.
 
-Felet innebär GPU:n (Graphics Processing Unit) inte har tillräckligt med minne för att köra demot. Det är GPU:n som gör allt tyngdlyftande vid ritande av 3D-grafik till skärmen (lite som grafikkortet i en spel-PC). Raspberry Pi:n delar sitt minne/RAM mellan CPU:n (Central Processing Unit) och GPU:n, och som standard är den konfigurerad att bara ge 64 MB RAM till GPU:n. Om vi ​​ökar detta till 128, bör det lösa problemet.
+Felet innebär att GPU:n (Graphics Processing Unit) inte har tillräckligt med minne för att köra demot. Det är GPU:n som gör allt tyngdlyftande vid ritande av 3D-grafik till skärmen (lite som grafikkortet i en spel-PC). Raspberry Pi:n delar sitt minne/RAM mellan CPU:n (Central Processing Unit) och GPU:n, och som standard är den konfigurerad att bara ge 64 MB RAM till GPU:n. Om vi ​​ökar detta till 128, bör det lösa problemet.
 
 För att göra det, måste du ange följande kommando:
 
@@ -145,11 +146,11 @@ Efter att du har loggat in igen, skriv följande kommando för att komma tillbak
 
 `cd /opt/vc/src/hello_pi/hello_teapot`
 
-Försök nu och köra det igen, och du kommer upptäcka att det fungerar.
+Försök nu att köra det igen, och du kommer upptäcka att det fungerar.
 
 `./hello_teapot.bin`
 
-Demot kommer att köras för evigt tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
+Demot kommer att köras för evigt eller tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
 
 ## Hallå audio
 
@@ -169,9 +170,9 @@ Detta kommer att spela upp ljudet via hörlursuttaget på Pi:n. Om du använder 
 
 `./hello_audio.bin 1`
 
-Demot kommer att köras för evigt tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
+Demot kommer att köras för evigt eller tills du avslutar. För att lämna demot, tryck `Ctrl+C`.
 
-## Vad göra härnäst?
+## Vad vill du göra nu?
 
-- Vid det här laget bör du börja få kläm på att navigera upp till moder `hello_pi`-mappen (med `cd ..`) och sedan ner i en av demomapparna (med `cd hello_something`).
+- Vid det här laget bör du börja få kläm på att navigera upp till förälder-mappen `hello_pi` (med `cd ..`) och sedan ner i en av demomapparna (med `cd hello_something`).
 - Prova några av de andra demona på egen hand. `hello_videocube` är ett bra ställe att börja.
