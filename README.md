@@ -7,7 +7,7 @@ Hur man kör demoprogrammen i hello_pi på Raspbian.
 ## Så du har fått en Raspberry Pi. Hur kommer du igång?
 
 Vad sägs om att köra några demoprogram som visar upp vad Pi:n klarar av? Någon som vill ha fantastisk grafik?
-Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
+Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p/Full-HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
 Dessa är bra för att få en känsla för vad Pi:n kan göra, och för att få lite erfarenhet av att navigera runt i systemet och köra program från kommandoraden.
 
 ## Krav
@@ -20,7 +20,7 @@ Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian behöver du även:
 - Micro USB-nätadapter
 - Ett SD-kort med Raspbian redan installerat med hjälp av NOOBS
 - USB-tangentbord och -mus
-- HDMI-kabel, eller videokabel (RCA) och för rev. 3+, adapter till 4-polig 3.5 mm-kontakt
+- HDMI-kabel, eller videokabel (RCA) och för rev. 3+, adapter till 4-polig 3,5 mm-kontakt
 - En bildskärm eller TV
 - Högtalare med hörlurssladd, eller hörlurar, eller högtalare inbyggda i bildskärmen/TV:n
 
