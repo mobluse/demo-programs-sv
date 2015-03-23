@@ -18,7 +18,7 @@ Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian behöver du även:
 
 - Raspberry Pi
 - Micro USB-nätadapter
-- Ett SD-kort med Raspbian redan installerat med hjälp av NOOBS
+- Ett SD-kort med Raspbian redan installerat t.ex. med hjälp av NOOBS
 - USB-tangentbord och -mus
 - HDMI-kabel, eller videokabel (RCA) och för rev. 3+, adapter till 4-polig 3,5 mm-kontakt
 - En bildskärm eller TV
