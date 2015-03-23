@@ -45,7 +45,7 @@ Utöver en Raspberry Pi med ett SD-kort laddat med Raspbian behöver du även:
 
 ## Licens
 
-Om inget annat anges, omfattas allt i detta repositorie av följande licens:
+Om inget annat anges, omfattas allt i detta repositorium av följande licens:
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
