@@ -2,7 +2,7 @@
 
 Hur man kör demoprogrammen i hello_pi på Raspbian.
 
-![image](./images/cover.jpg "Raspberry Pi")
+![image](https://github.com/mobluse/demo-programs-sv/images/cover.jpg "Raspberry Pi")
 
 ## Så du har fått en Raspberry Pi. Hur kommer du igång?
 
