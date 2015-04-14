@@ -1,3 +1,4 @@
+[PDF för utskrift](https://gitprint.com/mobluse/demo-programs-sv/blob/master/worksheet.md)
 # Demoprogram
 
 Raspbian kommer med en rad demoprogram som du bara kan kompilera och köra. De sträcker sig från enkel "hallå världen" textutmatning, till uppspelning av 1080p/Full-HD-video, snurrande 3D-tekannor, och realtidsanimerade fraktala mönster.
@@ -176,3 +177,5 @@ Demot kommer att köras för evigt eller tills du avslutar. För att lämna demo
 
 - Vid det här laget bör du börja få kläm på att navigera upp till förälder-mappen `hello_pi` (med `cd ..`) och sedan ner i en av demomapparna (med `cd hello_something`).
 - Prova några av de andra demona på egen hand. `hello_videocube` är ett bra ställe att börja.
+
+[PDF för utskrift](https://gitprint.com/mobluse/demo-programs-sv/blob/master/worksheet.md)
