@@ -51,7 +51,7 @@ Använd följande kommando för att köra demot. Du behöver `./` för att ange 
 
 Detta kommer att spela ett 15 sekunder långt, Full-HD/1080p-videoklipp utan ljud. Avsikten här är att visa videoavkodning och -uppspelning. Du kommer se att det går väldigt flytande (d.v.s. utan att lagga)!
 
-![image](./images/bbb.jpg "Big Buck Bunny")
+![image](images/bbb.jpg "Big Buck Bunny")
 
 Ange följande kommandon för att navigera till `hello_video`-mappen och lista filerna.
 
@@ -89,7 +89,7 @@ Demot kommer att köras för evigt eller tills du bestämmer dig för att sluta.
 
 Detta visar två överlagrade fraktaler, en ovanpå den andra. Du kan flytta musen för att ändra formen på fraktalen i realtid. Detta är också avsett att demonstrera Open GL ES-rendering. Några av er kanske känner igen Mandelbrot-fraktalen.
 
-![image](./images/mandelbrot.jpg "Mandelbrot")
+![image](images/mandelbrot.jpg "Mandelbrot")
 
 ```
 cd ..
@@ -107,7 +107,7 @@ Kör nu omkring med musen, och du ser hur fraktalen förändras. Se om du kan f�
 
 Detta visar en snurrande tekanna med videoklipp från `hello_video` textur-mappat på dess yta. Imponerande! Du kanske känner igen tekannemodellen om du är bekant med en programvara som heter Blender. Detta visar Open GL ES-rendering och videoavkodning och -uppspelning samtidigt.
 
-![image](./images/teapot.jpg "Tea Pot")
+![image](images/teapot.jpg "Tea Pot")
 
 ```
 cd ..
